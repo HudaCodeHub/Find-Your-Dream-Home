@@ -1,7 +1,17 @@
 import React from 'react'
+import Navbar from './Components/Navbar/Navbar';
+import Hero from './Components/Hero/Hero';
 
-export const App = () => {
+
+
+
+const App = () => {
   return (
-    <h1 className="text-3xl font-bold text-blue-600">Hello</h1>
+    <>
+     <Navbar/>
+     <Hero/>
+    </>
   )
 }
+
+export default App;
