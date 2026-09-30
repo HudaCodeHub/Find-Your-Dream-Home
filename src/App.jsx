@@ -1,16 +1,24 @@
 import React from 'react'
-import Navbar from './Components/Navbar/Navbar';
-import Hero from './Components/Hero/Hero';
+// import Contacts from './Components/Contacts/Contacts';
+// import Agents from './Components/Agents/Agents';
+// import Popular from './Components/Our popular/Our popular';
+// import Navbar from './Components/Navbar/Navbar';
+// import Hero from './Components/Hero/Hero';
+// import WhyChooseUS from './Components/WhyChooseUs/WhyChooseUS';
 
 
 
 
 const App = () => {
   return (
-    <div className="flex h-dvh flex-col overflow-hidden bg-[#fdf5ef]">
-     <Navbar/>
-     <Hero/>
-    </div>
+   <>
+     {/* <Navbar/>
+     <Hero/> */}
+     {/* <WhyChooseUS/> */}
+     {/* <Popular/> */}
+     {/* <Agents/> */}
+     {/* <Contacts/> */}
+    </>
   )
 }
 
