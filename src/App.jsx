@@ -12,9 +12,9 @@ import WhyChooseUS from './Components/WhyChooseUs/WhyChooseUS';
 const App = () => {
   return (
    <>
-   
+   <div className='flex h-screen flex-col bg-[#fff8f3]'>
       <Navbar/>
-      <Hero/>
+      <Hero/></div>
      
      <WhyChooseUS/>
      <Popular/>

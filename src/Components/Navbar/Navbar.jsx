@@ -7,19 +7,15 @@ import group2 from "../../assets/photos/group 2.png";
 
 const Navbar = () => {
   return (
-    <div className="w-full bg-white px-16 py-6 flex items-center">
-      <img src={logo} alt="Dwello logo" className="h-10" />
-      <div className="w-full bg-white px-16 py-6 flex items-center">
-        <img src={group1} alt="group1" className="h-4 px-46"/>
-     
-            <div className='flex item-center gap-10'>
-              <img src={search} alt="search" className="w-7 h-5 rounded-lg shadow-lg"/>
-              <img src={user} alt="user" className="w-7 h-5 rounded-lg shadow-lg"/>
-              <img src={group2} alt="group3" className="w-30 h-7 rounded-lg shadow-lg"/>
-              </div></div>
+    <nav className="flex items-center justify-between px-16 py-4">
+      <img src={logo} alt="Dwello logo" className="h-8 w-auto" />
+      <img src={group1} alt="Home Service Agents Contact" className="h-5 w-auto" />
+      <div className="flex items-center gap-6">
+        <img src={search} alt="search" className="h-5 w-5 object-contain" />
+        <img src={user} alt="user" className="h-5 w-5 object-contain" />
+        <img src={group2} alt="Sign up" className="h-7 w-auto" />
       </div>
-    
-  );
-};
-
+    </nav>
+  )
+}
 export default Navbar;

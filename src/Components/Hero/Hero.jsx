@@ -8,35 +8,44 @@ import group7 from '../../assets/photos/Group 7.png';
 
 
 const Hero = () => {
-  
   return (
- <div className="flex h-dvh flex-col overflow-hidden bg-[#fdf5ef]">
-    <div className="flex min-h-0 flex-1 flex-col px-6 pb-6 md:px-20">
-<div className="flex min-h-0 flex-1 items-center justify-between gap-8">
-        <div className="max-w-md flex-1">
-         <h1 className="mb-6 text-[clamp(2rem,7vh,4rem)] font-extrabold leading-tight">
-            Find Your
-            <br />
-            Dream Home
-          </h1>
-          <p className="mb-6 max-w-xs text-sm font-bold leading-6">
-            Explore our curated selection of exquisite properties meticulously
-            tailored to your unique dream home vision
-           </p>
-           <img src={group3} alt="group1" className=""></img></div>
- 
-  <div className="flex ">
-           <img src={maskGroup} alt="Modern" className="h-auto max-h-full w-full max-w-[640px] object-contain md:h-full"></img>
-          
- </div></div>
- <div className="mx-auto flex w-full max-w-4xl shrink-0 gap-4 rounded-2xl bg-[#d9bcab] p-4 shadow-lg ">
- <img src={group4}/>
- <img src={group5}/>
- <img src={group6}/>
- <img src={group7}/>
-</div></div> </div> 
- 
-  );
-};
+    <section className="relative flex h-screen w-full flex-col overflow-hidden bg-[#FFF7F2]">
+      {/* navbar */}
+      
 
-export default Hero;
+      {/* middle area: all the space between navbar and search bar */}
+      <div className="relative mb-20 min-h-0 flex-1">
+        {/* house: sized by width so it grows toward the text */}
+        <img
+          src={maskGroup}
+          alt="Modern house"
+          className="pointer-events-none absolute -bottom-28 right-4 h-auto w-[58%] max-w-none object-contain object-right-bottom"
+        />
+
+        {/* text */}
+        <div className="absolute left-16 top-1/2 z-10 w-[38%] -translate-y-1/2">
+          <h1 className="mb-6 text-[clamp(2.5rem,4.2vw,4rem)] font-extrabold leading-[1.1] text-[#2B1810]">
+            Find Your <br /> Dream Home
+          </h1>
+          <p className="mb-8 max-w-[260px] text-sm font-bold leading-6 text-[#2B1810]">
+            Explore our curated selection of exquisite properties
+            meticulously tailored to your unique dream home vision
+          </p>
+          <img src={group3} alt="Sign up" className="h-10 w-auto" />
+        </div>
+      </div>
+
+      {/* search bar */}
+      <div className="absolute bottom-6 left-1/2 z-30 flex w-full max-w-4xl -translate-x-1/2 items-center justify-between gap-4 rounded-2xl bg-[#DCC5B8] p-5 shadow-lg">
+        <img src={group4} alt="Location" className="h-10 w-auto" />
+        <img src={group5} alt="Type" className="h-10 w-auto" />
+        <img src={group6} alt="Price Range" className="h-10 w-auto" />
+        <img src={group7} alt="Sign up" className="h-10 w-auto" />
+      </div>
+    </section>
+  )
+}
+
+export default Hero
+
+
